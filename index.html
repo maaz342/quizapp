@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz App</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+
+        <div class="row justify-content-center">
+
+            <div class="col-md-6">
+                <div class="quiz-section">
+                    <h3>Quiz App</h3>
+                    <div id="result" style="display: none;"></div>
+                    <div id="quiz">
+                        <h2 class="question" id="question">Quiz Question</h2>
+                        <hr>
+                        <ul id="options">
+                            <li>
+                                <input type="radio" name="answer" id="a" class="answer">
+                                <label for="a" id="option_1">Option</label>
+                            </li>
+                            <li>
+                                <input type="radio" name="answer" id="b" class="answer">
+                                <label for="b" id="option_2">Option</label>
+                            </li>
+                            <li>
+                                <input type="radio" name="answer" id="c" class="answer">
+                                <label for="c" id="option_3">Option</label>
+                            </li>
+                            <li>
+                                <input type="radio" name="answer" id="d" class="answer">
+                                <label for="d" id="option_4">Option</label>
+                            </li>
+                        </ul>
+                        <hr>
+                        <div class="btn">
+                            <button id="next" class="btn btn-primary">Next</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://www.gstatic.com/firebasejs/7.17.2/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.17.2/firebase-database.js"></script>
+    <script src="app.js"></script>
+</body>
+</html>

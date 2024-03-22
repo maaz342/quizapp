@@ -1,0 +1,30 @@
+.quiz-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 200px;
+    border: 2px solid black;
+    border-radius: 4px;
+    background-color: cyan;
+}
+body {
+    background-image: url('https://img.freepik.com/premium-photo/blue-question-mark-random-pattern-background-illustration_103740-566.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.options {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.options li {
+    flex-basis: 50%; /* Two options per row */
+}
+
+li{
+    list-style: none;
+}
